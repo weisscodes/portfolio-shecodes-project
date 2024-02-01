@@ -64,7 +64,7 @@ p {
 .regular-paragraph {
   font-size: 16px;
   line-height: 30px;
-  color: rgb(39, 33, 66, 0.7);
+  color: rgb(39, 33, 66, 0.75);
 }
 
 .mb-xlarge {
@@ -73,6 +73,10 @@ p {
 
 .mb-xxlarge {
   margin-bottom: 80px;
+}
+
+.mb-xxxlarge {
+  margin-bottom: 160px;
 }
 
 .border-radius-large {
@@ -190,6 +194,19 @@ p {
   font-family: var(--font-body);
 }
 
+.page-section {
+  padding: 160px 24px 104px;
+}
+
+.page-heading-wrapper {
+  width: 100%;
+  max-width: 700px;
+}
+
+.portfolio-image {
+  border-radius: var(--rounded-corner-large);
+}
+
 @media (max-width: 1240px) {
   h1 {
     font-size: 48px;
@@ -231,8 +248,12 @@ p {
     margin: 64px auto 80px;
   }
 
-  .about-section {
+  .page-section {
     padding: 80px 24px;
+  }
+
+  .mb-xxxlarge {
+    margin-bottom: 80px;
   }
 }
 
