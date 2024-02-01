@@ -10,6 +10,8 @@
 
 body {
   font-family: var(--font-body);
+  font-size: 18px;
+  line-height: normal;
   font-weight: 400;
   font-style: normal;
 }
@@ -34,8 +36,23 @@ h1 {
   line-height: normal;
 }
 
+h2 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 p {
   margin: 0;
+}
+
+.mb-xlarge {
+  margin-bottom: 64px;
+}
+
+.mb-xxlarge {
+  margin-bottom: 80px;
 }
 
 .hero-section {
@@ -64,6 +81,7 @@ p {
 
 .button {
   display: block;
+  text-align: center;
   padding: 18px 36px;
   border-radius: var(--rounded-corner-small);
   text-decoration: none;
@@ -76,9 +94,104 @@ p {
 .button-primary {
   background-color: var(--color-accent);
   color: white;
+  font-size: 18px;
 }
 
 .button-primary:hover {
   background-color: transparent;
   color: var(--color-accent);
+}
+
+.button-secondary {
+  color: var(--color-accent);
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.button-secondary:hover {
+  color: white;
+  background-color: var(--color-accent);
+}
+
+.portfolio-section {
+  padding: 128px 24px 132px;
+}
+
+.regular-paragraph {
+  font-size: 16px;
+  line-height: 30px;
+  color: rgb(39, 33, 66, 0.7);
+}
+
+.contact-bg {
+  background-color: var(--color-primary);
+  border-radius: var(--rounded-corner-large);
+  padding: 48px 120px;
+}
+
+.email-link {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.contact-links-container {
+  padding: 0 24px;
+  margin: 80px auto 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  border-radius: 100%;
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .hero-section h2 {
+    font-size: 20px;
+  }
+
+  .hero-section {
+    padding: 80px 24px;
+  }
+
+  .portfolio-section {
+    padding: 80px 24px 80px;
+  }
+
+  .mb-md-large {
+    margin-bottom: 64px;
+  }
+
+  .contact-bg {
+    padding: 40px;
+  }
+
+  .contact-links-container {
+    margin: 64px auto 80px;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-bg {
+    border-radius: 0px;
+  }
 }
