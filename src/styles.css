@@ -43,8 +43,28 @@ h2 {
   line-height: normal;
 }
 
+.heading-h2-style {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heading-h3-style {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 p {
   margin: 0;
+}
+
+.regular-paragraph {
+  font-size: 16px;
+  line-height: 30px;
+  color: rgb(39, 33, 66, 0.7);
 }
 
 .mb-xlarge {
@@ -53,6 +73,10 @@ p {
 
 .mb-xxlarge {
   margin-bottom: 80px;
+}
+
+.border-radius-large {
+  border-radius: var(--rounded-corner-large);
 }
 
 .hero-section {
@@ -117,12 +141,6 @@ p {
   padding: 128px 24px 132px;
 }
 
-.regular-paragraph {
-  font-size: 16px;
-  line-height: 30px;
-  color: rgb(39, 33, 66, 0.7);
-}
-
 .contact-bg {
   background-color: var(--color-primary);
   border-radius: var(--rounded-corner-large);
@@ -156,12 +174,36 @@ p {
   color: var(--color-accent);
 }
 
-@media (max-width: 1000px) {
+.about-section {
+  padding: 160px 24px;
+}
+
+.about-content {
+  width: 100%;
+  max-width: 506px;
+  margin-right: auto;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--font-body);
+}
+
+@media (max-width: 1240px) {
   h1 {
     font-size: 48px;
   }
 
   h2 {
+    font-size: 36px;
+  }
+
+  .heading-h2-style {
+    font-size: 36px;
+  }
+
+  .heading-h3-style {
     font-size: 36px;
   }
 
@@ -187,6 +229,10 @@ p {
 
   .contact-links-container {
     margin: 64px auto 80px;
+  }
+
+  .about-section {
+    padding: 80px 24px;
   }
 }
 
