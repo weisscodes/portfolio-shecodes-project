@@ -83,6 +83,29 @@ p {
   border-radius: var(--rounded-corner-large);
 }
 
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.navbar-custom {
+  padding: 24px 0px;
+}
+
+.nav-link {
+  color: var(--color-dark) !important;
+  opacity: 0.75;
+  font-weight: 500;
+  transition: all 200ms ease;
+  margin-left: 40px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-accent) !important;
+  opacity: 1;
+}
+
 .hero-section {
   background-color: var(--color-primary);
   text-align: center;
@@ -222,6 +245,10 @@ p {
 
   .heading-h3-style {
     font-size: 36px;
+  }
+
+  .nav-link {
+    margin-left: 0px;
   }
 
   .hero-section h2 {
