@@ -177,11 +177,13 @@ p {
 .email-link {
   text-decoration: none;
   color: var(--color-dark);
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .contact-links-container {
   padding: 0 24px;
-  margin: 80px auto 120px;
+  margin: 80px auto 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,6 +231,15 @@ p {
 .portfolio-image {
   border-radius: var(--rounded-corner-large);
 }
+.copyright {
+  margin: 48px 0 80px;
+  text-align: center;
+  padding: 0px 24px;
+}
+
+.copyright a {
+  color: var(--color-accent);
+}
 
 @media (max-width: 1240px) {
   h1 {
@@ -272,7 +283,7 @@ p {
   }
 
   .contact-links-container {
-    margin: 64px auto 80px;
+    margin-top: 64px;
   }
 
   .page-section {
